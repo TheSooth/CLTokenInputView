@@ -384,6 +384,24 @@ static CGFloat const FIELD_MARGIN_X = 4.0; // Note: Same as CLTokenView.PADDING_
     self.textField.autocorrectionType = _autocorrectionType;
 }
 
+- (void)setFont:(UIFont *)font
+{
+    _font = font;
+    self.textField.font = _font;
+}
+
+- (void)setFieldFont:(UIFont *)fieldFont
+{
+    _fieldFont = fieldFont;
+    self.fieldLabel.font = _fieldFont;
+}
+
+- (void)setTextFieldTextColor:(UIColor *)textFieldTextColor
+{
+    _textFieldTextColor = textFieldTextColor;
+    self.textField.textColor = _textFieldTextColor;
+}
+
 
 #pragma mark - Measurements (text field offset, etc.)
 
